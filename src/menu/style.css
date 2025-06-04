@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap'); 
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Meddon&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Tangerine:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow:scroll;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 15vh;
+    background-color: #66334b;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+img{
+    margin-left: 6%;
+    width: 20%;
+    height: 15vh;
+}
+
+nav ul li{
+    margin-right: 70px;
+    display: inline-block;
+}
+
+nav ul li a{
+    text-decoration: none;
+    padding: 5px 5px;
+    display: inline-block;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover{
+    background-color: #f0d7d3b4;
+    padding: 8px 8px;
+    color: #2b2b2b;
+    font-weight: 700;
+    border-radius: 2px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+header{
+    background-image: url(../img/macarrao-edit.jpg);
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+}
+
+h1{
+    font-family: "Lobster", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    color: #fff;
+    font-size: 35px;
+    top: 375px;
+    padding-left: 70px;
+    text-align: left;
+    position: fixed;
+}
+
+img{
+    padding: 0;
+    background-attachment: fixed;
+}
+
+h2{
+    font-family: "Zain", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #fff;
+    font-size: 29px;
+    top: 470px;
+    padding-left: 70px;
+    position: fixed;
+}
+
+.card{
+    background-color: #fff;
+    width: 25%;
+    height: 28%;
+    padding: 50px;
+    position: fixed;
+    top: 72%;
+    left: 65%;
+}
+
+
+.card .reserva{
+    width: 10%;
+    color: #66334b;
+    position: fixed;
+    top: 490px;
+    right: 340px;
+    font-size: 30px;
+    white-space: nowrap ; /*NAO DEIXA QUEBRAR LINHA*/
+
+}
+
+.btn1{
+background-color:#66334b;
+width: 60%;
+height: 50%;
+margin-top: 25%;
+margin-left: 18%;
+color: #fff;
+font-family:"Open Sans", sans-serif ;
+border: none;
+}
+
+.btn1:hover{
+    color: #fff;
+    background-color: #422432;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
