@@ -60,10 +60,12 @@ nav ul li a:hover{
 }
 
 header{
-    background-image: url(../img/macarrao-edit.jpg);
+    background-image: url(../img/Design\ sem\ nome.jpg);
     background-attachment: fixed;
+    background-size: cover;
     width: 100vw;
     height: 100vh;
+
 }
 
 h1{
@@ -71,8 +73,8 @@ h1{
     font-weight: 100;
     font-style: normal;
     color: #fff;
-    font-size: 35px;
-    top: 375px;
+    font-size: 30px;
+    top: 410px;
     padding-left: 70px;
     text-align: left;
     position: fixed;
@@ -88,8 +90,8 @@ h2{
     font-weight: 300;
     font-style: normal;
     color: #fff;
-    font-size: 29px;
-    top: 470px;
+    font-size: 28px;
+    top: 480px;
     padding-left: 70px;
     position: fixed;
 }
@@ -110,7 +112,7 @@ h2{
     color: #66334b;
     position: fixed;
     top: 490px;
-    right: 340px;
+    right: 345px;
     font-size: 30px;
     white-space: nowrap ; /*NAO DEIXA QUEBRAR LINHA*/
 
