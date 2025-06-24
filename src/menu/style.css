@@ -114,7 +114,7 @@ h2{
     padding: 50px;
     position: fixed;
     top: 72%;
-    left: 65%;
+    left: 100%;
 }
 
 
@@ -122,8 +122,8 @@ h2{
     width: 10%;
     color: #66334b;
     position: fixed;
-    top: 502px;
-    right: 363px;
+    top: 530px;
+    right: 370px;
     font-size: 30px;
     white-space: nowrap ; /*NAO DEIXA QUEBRAR LINHA*/
 }
@@ -137,6 +137,7 @@ margin-left: 18%;
 color: #fff;
 font-family:"Open Sans", sans-serif ;
 border: none;
+font-weight: 600;
 }
 
 .btn1:hover{
@@ -144,9 +145,24 @@ border: none;
     background-color: #422432;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
+    font-weight: 700;
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+
+menu-mobile{
+    display: none;
 }
 
 @media(max-width:460px){
+    body{
+        background-color: #fff;
+        overflow: hidden;
+    }
+
+
     nav{
         top: 0;
         height: 20vh;
@@ -156,7 +172,8 @@ border: none;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        pointer-events: none;
+        position: fixed;
+        z-index: 0;
     }
 
 
@@ -186,31 +203,83 @@ border: none;
         display: none;
     }
 
+    .mobile-menu-icon{
+        width: 70px;
+        height: 70px;
+        right: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        border: none;
+    }
+
     .menu{
-        all: unset;
-        position: fixed;
-        right: 15px;
-        top: 45px;
-        z-index: 9999;
+        background-color: transparent;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        right: 40px;
+        color: #fff;
     }
 
     .menu .material-icons{
-        color: #fff;
-        font-size: 43px;
-        right: 15px;
-        cursor: pointer;
-        display: inline-block;
-        line-height: 1;
+        font-size: 35px;
+        
+    }
+
+    .menu-mobile{
+        position: fixed;
+        top: 100px;
+        width: 100vw;
+        opacity: 0; /*ESCONDE OS ELEMENTOS*/
+        transition: opacity 0.10s ease, transform 0.10s ease;
     }
 
 
+    .menu-mobile.active{
+        visibility: visible;
+        flex-direction: column;
+        background-color: #66334b;
+        gap: 10px; 
+        opacity: 1; /*FICA VÍSIVEL*/
+    }
 
+    .menu-mobile ul{
+        display: flex;
+        flex-direction: column;
+        background-color:#66334b;
+        gap: 10px;
+        list-style: none;
     
+    }
+
+    .menu-mobile li{
+        width: 100%;
+    }
+
+    .menu-mobile ul li a{
+        color:#fff;
+        text-decoration: none;
+        font-family: "Open Sans", sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        padding: 10px;
+        display: block; /*TORNA O a UM BOTÃO CLICÁVEL*/
+        width: 100%; /* Ocupa toda a largura do <li> */
+        padding: 10px 20px;
+        transition: all 0.2s ease-in-out;
+
+    }
+
+    .menu-mobile ul li a:hover{
+        background-color: #f0d7d3; 
+        color:  #2b2b2b;
+        font-weight: 700;
+    }
+
+
 }
-
-    
-
-
-
-    
-

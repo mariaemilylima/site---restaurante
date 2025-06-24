@@ -1,0 +1,122 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Meddon&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Tangerine:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap');
+
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+
+}
+
+
+.card {
+   background-color: #66334b;
+   width: fit-content;
+   width: 420px;
+   height: 600px;
+   margin: 60px auto;
+   margin-top: 20px;
+   margin-left: 300px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   top: 40px;
+   left: 20px;
+   position: fixed;
+   
+}
+
+.card1 {
+   background-color:#66334b;
+   width: 250px;
+   height: 600px;
+   margin: 60px auto;
+   margin-top: 60px;
+   margin-left: 265px;
+   display: flex;
+   border-radius: 40px;
+   top: 0;
+   position: fixed;
+   
+
+
+}
+
+.card2 {
+   background-color:#66334b;
+   width: 200px;
+   height: 130px;
+   margin: 60px auto;
+   margin-top: 530px;
+   margin-left: 265px;
+   display: flex;
+   top: 0;
+   position: fixed;
+  
+
+}
+
+.container {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 60%;
+   padding: 60px;
+   position: fixed;
+
+}
+
+.imagem1 {
+   transform: scale(0.8); /*REDUZ TUDO PROPORCIONALMENTE*/
+   transform-origin: top left;
+   z-index: 1;
+   top: 60px;
+   margin-left: 300px;
+   position: fixed;
+
+}
+
+.imagem2 {
+   transform: scale(0.8);
+   position: fixed;
+   margin-left: 520px;
+   margin-top: 60px;
+   z-index: 1;
+   
+
+}
+
+.texto-box {
+   width: 500px;
+   left: 815px;
+   top: 150px;
+   position: fixed;
+}
+
+.texto-box h1 {
+   color: #b38a4d;
+   font-size: 34px;
+   margin-bottom: 20px;
+   font-family:  "Lobster", sans-serif;
+   font-weight: 200;
+   margin-top: 20px;
+}
+ 
+
+.texto-box p {
+   color: #444;
+   font-size: 17px;
+   margin-bottom: 25px; /* espacamento entre os textos */
+   line-height: 1.8; /* espacamento entre as linhas */
+   width: 530px;
+   height: 90Spx;
+   color: #444;
+   font-family: "Open Sans", sans-serif;
+}
+
