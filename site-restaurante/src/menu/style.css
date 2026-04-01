@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap'); 
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Meddon&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Tangerine:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow:scroll;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 15vh;
+    background-color: #66334b;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+img{
+    margin-left: 6%;
+    width: 20%;
+    height: 15vh;
+}
+.img2{
+    display: none;
+}
+
+nav ul li{
+    margin-right: 70px;
+    display: inline-block;
+}
+
+nav ul li a{
+    text-decoration: none;
+    padding: 5px 5px;
+    display: inline-block;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover{
+    background-color: #f0d7d3b4;
+    padding: 8px 8px;
+    color: #2b2b2b;
+    font-weight: 700;
+    border-radius: 2px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.menu{
+    display: none;
+}
+
+
+
+header{
+    background-image: url(../img/Design\ sem\ nome.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+h1{
+    font-family: "Lobster", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    color: #fff;
+    font-size: 30px;
+    top: 460px;
+    padding-left: 70px;
+    text-align: left;
+    position: fixed;
+}
+
+img{
+    padding: 0;
+    background-attachment: fixed;
+}
+
+h2{
+    font-family: "Zain", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #fff;
+    font-size: 28px;
+    top: 540px;
+    left: 70px;
+    position: fixed;
+}
+
+.card{
+    background-color: #fff;
+    width: 25%;
+    height: 28%;
+    padding: 50px;
+    position: fixed;
+    top: 72%;
+    left: 100%;
+}
+
+
+.card .reserva{
+    width: 10%;
+    color: #66334b;
+    position: fixed;
+    top: 530px;
+    right: 370px;
+    font-size: 30px;
+    white-space: nowrap ; /*NAO DEIXA QUEBRAR LINHA*/
+}
+
+.btn1{
+background-color:#66334b;
+width: 60%;
+height: 50%;
+margin-top: 25%;
+margin-left: 18%;
+color: #fff;
+font-family:"Open Sans", sans-serif ;
+border: none;
+font-weight: 600;
+}
+
+.btn1:hover{
+    color: #fff;
+    background-color: #422432;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+
+menu-mobile{
+    display: none;
+}
+
+@media(max-width:460px){
+    body{
+        background-color: #fff;
+        overflow: hidden;
+    }
+
+
+    nav{
+        top: 0;
+        height: 20vh;
+        width: 100vw;
+        background-color: #66334b;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        z-index: 0;
+    }
+
+
+    img{
+        display: none;
+    }
+
+    .img2{
+        display: flex;
+        width: 50%;
+        height: 20vh;
+    }
+
+    nav  ul li{
+        display: none;
+    }
+
+    nav ul li a{
+        display: none;
+    }
+
+    nav ul li a:hover{
+        display: none;
+    }
+
+    header{
+        display: none;
+    }
+
+    .mobile-menu-icon{
+        width: 70px;
+        height: 70px;
+        right: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        border: none;
+    }
+
+    .menu{
+        background-color: transparent;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        right: 40px;
+        color: #fff;
+    }
+
+    .menu .material-icons{
+        font-size: 35px;
+        
+    }
+
+    .menu-mobile{
+        position: fixed;
+        top: 100px;
+        width: 100vw;
+        opacity: 0; /*ESCONDE OS ELEMENTOS*/
+        transition: opacity 0.10s ease, transform 0.10s ease;
+    }
+
+
+    .menu-mobile.active{
+        visibility: visible;
+        flex-direction: column;
+        background-color: #66334b;
+        gap: 10px; 
+        opacity: 1; /*FICA VÍSIVEL*/
+    }
+
+    .menu-mobile ul{
+        display: flex;
+        flex-direction: column;
+        background-color:#66334b;
+        gap: 10px;
+        list-style: none;
+    
+    }
+
+    .menu-mobile li{
+        width: 100%;
+    }
+
+    .menu-mobile ul li a{
+        color:#fff;
+        text-decoration: none;
+        font-family: "Open Sans", sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        padding: 10px;
+        display: block; /*TORNA O a UM BOTÃO CLICÁVEL*/
+        width: 100%; /* Ocupa toda a largura do <li> */
+        padding: 10px 20px;
+        transition: all 0.2s ease-in-out;
+
+    }
+
+    .menu-mobile ul li a:hover{
+        background-color: #f0d7d3; 
+        color:  #2b2b2b;
+        font-weight: 700;
+    }
+
+
+}
